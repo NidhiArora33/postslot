@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+      <!-- jQuery library -->
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+      <!-- Popper JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="..\CSS\PostSlot.css" type="text/css">
+    <title>Post Slot</title>
+</head>
+
+<body>
+    <h1>Post <span>Your</span> Slot</h1>
+    <div class="container animate__animated animate__bounceInLeft">
+        <form>
+            <p>
+                <label for="firstname">First Name</label>
+                <input id="firstname" type="text" name="fname">
+                <small id="fnmsg" style="color:red">Enter First Name</small>
+            </p>
+            <p>
+                <label for="lastname">Last Name</label>
+                <input id="lastname" type="text" name="lname">
+                <small id="lnmsg" style="color:red">Enter Last Name</small>
+            </p>
+            <p class="full">
+                <label>E-Mail</label>
+                <input type="email" name="email">
+                <!-- <small id="emailmsg" style="color:red">Enter Valid Email</small> -->
+            </p>
+            <p class="full">
+                <label for="add1">Address</label>
+                <input id="add1" type="text" name="address" placeholder="1234 Main St">
+                <small id="addmsg" style="color:red">Enter Address</small>
+            </p>
+            <p class="full">
+                <label>Address2</label>
+                <input type="text" name="address2" placeholder="Appartment,Studio, or Floor">
+            </p>
+
+
+
+            <p>
+                <label for="city">City</label>
+                <input id="city" type="text" name="city">
+                <small id="citymsg" style="color:red">Enter City Name</small>
+            </p>
+            <p>
+                <label for="country">Country</label>
+                <input id="country" type="text" name="country">
+                <small id="cmsg" style="color:red">Enter Country Name</small>
+            </p>
+
+
+            <p>
+                <label for="state">State</label>
+                <input id="state" type="text" name="state">
+                <small id="smsg" style="color:red">Enter State Name</small>
+            </p>
+            <p>
+                <label for="zip">Zip</label>
+                <input id="zip" type="text" name="zipcode">
+                <small id="zipmsg" style="color:red">Enter Zipcode</small>
+            </p>
+            <p class="full">
+                <label for="msg">Message</label>
+                <textarea id="msg" rows="4" cols="50"></textarea>
+
+            </p>
+            <p>
+                <input type="file" name="file" id="file" />
+                <label for="file" id="file">Choose a file...</label>
+                <small id="filemsg" style="color:red">Upload File</small>
+            </p>
+            <p>
+                <button id="submitbtn">Submit</button>
+
+            </p>
+            <p>
+                <img id="imgPreview" src="#" alt="pic" />
+            </p>
+
+            
+            
+        </form>
+        
+    </div>
+    <script src="../JS/postslot.js"></script>
+</body>
+
+</html>
